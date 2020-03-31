@@ -1,0 +1,31 @@
+{
+  "name": "protractor-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "dependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^13.9.8",
+    "jasmine": "^3.5.0",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor": "^5.4.3",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/selenium-webdriver": "^4.0.9"
+  },
+  "scripts": {
+    "webdriver-update": ".\\node_modules\\.bin\\webdriver-manager update",
+    "webdriver-start": ".\\node_modules\\.bin\\webdriver-manager start",
+    "start": "npm run webdriver-update &&npm run webdriver-start",
+    "tsc": "tsc",
+    "protractor": ".\\node_modules\\.bin\\protractor .\\build\\config.js",
+    "test": "tsc &&npm run protractor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

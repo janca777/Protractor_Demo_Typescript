@@ -1,0 +1,15 @@
+#all files in the 'build'-folder (that got converted into javascript)
+build/**
+
+# Screenshot des Reports
+target/**/*.png
+**/screenshots/*/*.png
+
+plugins.js
+spec.js
+specPageObjects.js
+angularPage.js
+*.d.ts
+node_modules
+package-lock.json
+.npm
