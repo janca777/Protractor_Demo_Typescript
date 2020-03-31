@@ -1,4 +1,4 @@
-//all methods in the class are static, so they can be called without instaciation
+//all methods in the class are static, so they can be called without instanciation
 import { browser, element, by, ExpectedConditions, Key } from 'protractor';
 
 export class GooglePage {
@@ -11,13 +11,13 @@ export class GooglePage {
       return this;
    }//end get
 
-   //gibt im Google-Suchfeld einen Text (der Paraeter) ein, und bestaetigt mit 'enter'
+   //gibt im Google-Suchfeld einen Text (den Parameter) ein, und bestätigt mit 'enter'
    static search(text: string) {
       this.txtSearch.sendKeys(text, Key.ENTER);
    }//end search
 
-   //Sucht nach dem Parameter aug foofle.de, und klickt auf den Link 'Maps', um den Standort des
-   //Suchbegriss anzuzeigen
+   //Sucht nach dem Parameter auf google.de, und klickt auf den Link 'Maps', um den Standort des
+   //Suchbegriffs anzuzeigen
    static showLocationOnMaps(text: string) {
       this.search(text);
       browser.wait(ExpectedConditions.elementToBeClickable(this.linkMaps), 10000);
